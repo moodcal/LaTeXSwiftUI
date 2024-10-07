@@ -47,7 +47,7 @@ internal struct Parser {
   
   /// An TeX-style block equation component.
   static let tex = EquationComponent(
-    regex: #/\$\$\s*(.*?)\s*\$\$/#,
+    regex: #/\$\$\s*([\s\S]*?)\s*\$\$/#,
     terminatingRegex: #/\$\$/#,
     equation: .texEquation)
   
